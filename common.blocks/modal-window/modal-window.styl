@@ -1,0 +1,23 @@
+mobile-break-point = 768px
+
+mobile-header-height = 40px
+
+.modal-window
+	position: fixed;
+	top: mobile-header-height;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	box-sizing: border-box;
+	border-top: #2f85bf solid mobile-header-height;
+	background: #FFF;
+	z-index: 6;
+	display: none;
+	
+	@media screen and (min-width: mobile-break-point)
+		top: 15%;
+		left: 20%;
+		bottom: 20%;
+		right: 20%;
+	
+	

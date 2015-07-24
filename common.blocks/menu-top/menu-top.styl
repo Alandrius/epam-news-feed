@@ -1,0 +1,37 @@
+mobile-header-height = 40px
+
+.menu-top
+	text-transform: uppercase;
+	font-size: 14px;
+	display: none;
+	position: fixed;
+	top: mobile-header-height;
+	left: 50%;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+	background: #2f85bf;
+	
+	& .menu-item
+		padding: 0 10px;
+		text-align: right;
+		margin: 20px 10px -10px 0;
+	
+	& a
+		color: #FFF;
+		text-decoration: none;
+		transition: 0.2s;
+		
+	
+	& a:hover
+		opacity: 0.7;
+
+	@media screen and (min-width: mobile-break-point)
+		display: flex;
+		position: static;
+		background: none;
+		
+		& .menu-item
+			margin: 0;
+			text-align: left;
+			

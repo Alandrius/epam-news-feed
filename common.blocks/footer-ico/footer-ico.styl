@@ -1,0 +1,57 @@
+mobile-break-point = 768px
+
+
+ico-background(bg)
+	background: url(bg);
+	background-size: contain;
+
+.footer-ico
+	width: 35px;
+	height: 35px;
+	background-repeat: no-repeat;
+	transition: 0.3s;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0 5px 20px 0;
+	
+	@media screen and (min-width: mobile-break-point)
+		margin: 0 20px 20px 0;
+
+	
+	&_type_twitter
+		ico-background('Twitter.png');
+		
+	&_type_twitter:hover
+		ico-background('Twitter_Color.png');
+		
+	&_type_pinterest
+		ico-background('Pinterest.png');
+		
+	&_type_pinterest:hover
+		ico-background('Pinterest_Color.png');
+		
+	&_type_youtube
+		ico-background('YouTube.png');
+		
+	&_type_youtube:hover
+		ico-background('YouTube_Color.png');			
+
+	&_type_facebook
+		ico-background('Facebook.png');
+		
+	&_type_facebook:hover
+		ico-background('Facebook_Color.png');	
+		
+	&_type_google
+		ico-background('Google.png');
+		
+	&_type_google:hover
+		ico-background('Google_Color.png');
+		
+	&_type_instagram
+		ico-background('Instagram.png');
+		
+	&_type_instagram:hover
+		ico-background('Instagram_Color.png');
+		
+	

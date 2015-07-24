@@ -1,0 +1,35 @@
+mobile-wrapper-width = 100%
+tablet-wrapper-width = 715px
+desktop-wrapper-width = 1250px
+
+tablet-break-point = 1280px
+mobile-break-point = 768px
+  
+.wrapper
+	width: mobile-wrapper-width;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	&.footer
+		align-items: flex-start;
+		flex-direction: column;
+		height:550px;
+		justify-content: space-between;
+		padding-left:20px;
+		
+		@media screen and (min-width: mobile-break-point)
+			padding-left:0px;
+			flex-direction: row;
+			height:auto;
+			align-items: stretch;
+  
+	@media screen and (min-width: mobile-break-point)
+			width: tablet-wrapper-width;
+		
+		@media screen and (min-width: tablet-break-point)
+				width: desktop-wrapper-width;
+
+

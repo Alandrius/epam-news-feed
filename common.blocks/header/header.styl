@@ -1,0 +1,22 @@
+blue-header-color = #4198d2
+
+mobile-break-point = 768px
+  
+mobile-header-height = 40px
+default-header-height = 60px
+
+.header
+	background: blue-header-color;
+	height: mobile-header-height;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:5;
+  
+	@media screen and (min-width: mobile-break-point)
+		height: default-header-height;
+
+
+
+

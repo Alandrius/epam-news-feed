@@ -1,0 +1,26 @@
+tablet-break-point = 1280px
+
+.search__search-input
+	background: #FFF;
+	
+	& input
+		border: none;
+		padding: 5px;
+		outline: none;
+		width: 82%;
+		height: 20px;
+		font-size: 14px;
+		color: #b8b8b8;
+		
+		@media screen and (min-width: tablet-break-point)
+			width: 91%;
+		
+	& button
+		border: none;
+		height: 20px;
+		width: 20px;
+		background: url(search.png) no-repeat;
+		background-size: contain;
+		float:right;
+		margin: 5px;
+		cursor: pointer;

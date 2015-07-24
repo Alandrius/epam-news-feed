@@ -1,2 +1,1 @@
-# epam-news-feed
-Epam news feed
+# Keep calm and stay BEMed!

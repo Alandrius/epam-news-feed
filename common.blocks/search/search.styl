@@ -1,0 +1,24 @@
+tablet-break-point = 1280px
+mobile-break-point = 768px
+
+mobile-header-height = 40px
+
+.search
+	display: none;
+	position: fixed;
+	top: mobile-header-height;
+	left: 0;
+	right: 0;
+	z-index: 5;
+	border: 20px solid #2f85bf;
+	box-sizing: border-box;
+	
+	@media screen and (min-width: mobile-break-point)
+		display:block;
+		width: 35%;
+		position: static;
+		border: none;
+		
+		@media screen and (min-width: tablet-break-point)
+			width: 40%;
+			display: block;
