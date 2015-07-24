@@ -109,10 +109,10 @@
 			content: [
 				{
 					block: 'wrapper',
+					mix: { block: 'content' },
 					content: [
 						{
-							block: 'news-feed',
-							content: 'News feed'
+							block: 'news-feed'
 						}
 					]
 				}

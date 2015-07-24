@@ -8,17 +8,21 @@ mobile-break-point = 768px
 .wrapper
 	width: mobile-wrapper-width;
 	margin: 0 auto;
-	height: 100%;
+	height: auto
+	min-height: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
+	
 	
 	&.footer
 		align-items: flex-start;
 		flex-direction: column;
 		height:550px;
 		justify-content: space-between;
-		padding-left:20px;
+		padding-left: 20px;
+		
 		
 		@media screen and (min-width: mobile-break-point)
 			padding-left:0px;
