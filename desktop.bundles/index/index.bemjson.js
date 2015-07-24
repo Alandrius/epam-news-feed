@@ -1,11 +1,14 @@
 ({
 	block: 'page',
 	title: 'EPAM news feed',
+	head : [
+        { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } }
+    ],
 	styles: [
 		{ elem: 'css', url: '_index.css' }
 	],
 	scripts: [
-
+		{ elem : 'js', url : 'visual.js' }
 	],
 	content: [
 		{
