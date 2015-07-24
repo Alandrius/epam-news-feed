@@ -2,10 +2,10 @@
 1) BEM metodology
 2) Stylus SCC preprocessor
 3) Flexboxes and media-queries
-4) ENB task runner
-5) I haven't used any special JS libraries and have used native JavaScript
+4) ENB to build the project
+5) I haven't used any special JS libraries and have used only native JavaScript
 
-# To build project please do the following
+# To build the project please do the following
 1) Clone this repository
 2) Go to the project's directory
 3) Perform "npm install"
