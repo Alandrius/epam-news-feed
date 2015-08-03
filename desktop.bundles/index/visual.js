@@ -122,12 +122,16 @@ Icon.prototype.outputToFeed = function (data) {
 		if(data !== undefined && data.length > 0) {
 			
 			removeElementById('error');
-			
+
 			for (var j = 0; j < data.length; j++) {
+				console.log(data[j]);
 				var newDiv = document.createElement('div');
 				newDiv.className = 'news-feed__item';
 				newDiv.setAttribute("data-id", data[j]._id);
-				newDiv.innerHTML = '<img src="http://nytimes.com/' + data[j].multimedia[0].url + '" alt="' + data[j].headline.main + '"><p class="news-feed__title">' + data[j].headline.main + '</p>';
+				if(data[j].multimedia.length > 0)
+					newDiv.innerHTML = '<img src="http://nytimes.com/' + data[j].multimedia[0].url + '" alt="' + data[j].headline.main + '"><p class="news-feed__title">' + data[j].headline.main + '</p>';
+				else
+					newDiv.innerHTML = '<div class="no-photo" >No photo</div><p class="news-feed__title">' + data[j].headline.main + '</p>';
 				
 				
 							
